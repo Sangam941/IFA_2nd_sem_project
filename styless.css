@@ -1,0 +1,186 @@
++
+#sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card{
+    width: 280px;
+    /* height: 100px; */
+    margin-top: 20px;
+    box-shadow: 2px 3px 4px rgb(197, 196, 196),-2px -3px 4px rgb(197, 196, 196);
+}
+
+.card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.card img{
+    width: 200px;
+    margin-bottom: -50px;
+   
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+#about{
+    background-color: #e9e5e5;
+    padding-bottom: 20px;
+}
+.about{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.para{
+    max-width: 80vw;
+    margin: auto;
+    line-height: 1.7;
+        
+}
+.line{
+    height: 5px;
+    width: 100vw;
+    margin: auto;
+    background-color: gray;
+}
+
+/* .flex{
+    gap: 20px;
+    
+} */
+
+@media screen and (max-width:800px) {
+    
+    .card{
+        max-width: 38vw;
+    }
+
+    
+}
+
+.flex2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.row .logo{
+    gap: 20px;
+}
+
+.title{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.logo{
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .fa-facebook{
+    /* margin: 5px; */
+    padding: 4px 10px 9px 5px;
+    border: 2px solid wheat;
+    height: 35px;
+    width:38px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    color: darkblue;
+}
+
+.fa-whatsapp{
+    padding: 4px 9px 10px 8px;
+    border: 2px solid green;
+    height: 35px;
+    width: 39px;;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: green;
+   
+}
+.fa-linkedin-in{
+    padding: 4px 9px 10px 8px;
+    border: 2px solid rgb(18, 71, 151);
+    height: 35px;
+    width: 39px;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(18, 71, 151);
+   
+}
+
+.fa-instagram{
+    padding: 6px 10px 10px 8px;
+    border: 2px solid purple 1%,rgb(252, 50, 83) 20%,red 80%,yellow 99%;
+    height: 35px;
+    width: 37px;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-image: linear-gradient(purple 1%,rgb(252, 50, 83) 20%,red 80%,yellow 99%);
+    color:white;
+}
+
+footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;         
+}
+.icon{
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width:500px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;   
+        
+}
+
+.copyright{
+    text-align: center;
+}
+
+.icon{
+    display: flex;
+    height: 20px;
+justify-content: center;
+}
+
+}
